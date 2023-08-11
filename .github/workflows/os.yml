@@ -1,8 +1,8 @@
 name: Demo OS ENV variables
-on: push
+on: [push, workflow_dispatch]
 jobs:
     if-Windows-else:
-      runs-on: windows-latest
+      runs-on: macos-latest
       steps:
         - name: condition 1
           if: runner.os == 'Windows'
