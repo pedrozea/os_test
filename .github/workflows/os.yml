@@ -2,7 +2,7 @@ name: Demo OS ENV variables
 on: [push, workflow_dispatch]
 jobs:
     if-Windows-else:
-      runs-on: macos-latest
+      runs-on: ubuntu-latest
       steps:
         - name: condition 1
           if: runner.os == 'Windows'
